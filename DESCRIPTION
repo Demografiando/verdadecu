@@ -1,12 +1,18 @@
 Package: verdadecu
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Datos de la Comision de la Verdad de Ecuador
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Authors@R: c(
+    person("Adriana", "Robles", email = "adriana@demografiando.pro",
+    role = c("aut","cre"),comment = c(ORCID = "0000-0001-7202-6523")),
+    person("Javier", "Borja", email = "javier@demografiando.pro", c("aut","cre")))
+Maintainer: contacto@demografiando.pro
+Description: Obtenga informaci'on de los datos recabados por la comisi'on de la verdad de
+    Ecuador. Extraiga informaci'on sistematizada para el an'alisis de derechos humanos
+    en el Ecuador.
+License: use_mit_license()
+URL: https://github.com/Demografiando/verdadecu
+BugReports: https://github.com/Demografiando/verdadecu/issues
 Encoding: UTF-8
 LazyData: true
 Depends: 
