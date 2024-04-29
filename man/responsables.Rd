@@ -21,6 +21,6 @@ Tomo 5: Conclusiones y Recomendaciones
 data(responsables)
 }
 \description{
-Datos que contienen el nombre de los presuntos responsables de las violaciones de derechos humanos y el o los casos en los que fueron señalados.
+Datos que contienen el nombre de los presuntos responsables de las violaciones de derechos humanos en Ecuador y el o los casos en los que fueron señalados.
 }
 \keyword{datasets}

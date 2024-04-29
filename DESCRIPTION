@@ -6,11 +6,11 @@ Author: Authors@R: c(
     person("Adriana", "Robles", email = "adriana@demografiando.pro",
     role = c("aut","cre"),comment = c(ORCID = "0000-0001-7202-6523")),
     person("Javier", "Borja", email = "javier@demografiando.pro", c("aut","cre")))
-Maintainer: contacto@demografiando.pro
+Maintainer: Adriana Robles <adriana@demografiando.pro>,Javier Borja <javier@demografiando.pro>
 Description: Obtenga informaci'on de los datos recabados por la comisi'on de la verdad de
     Ecuador. Extraiga informaci'on sistematizada para el an'alisis de derechos humanos
     en el Ecuador.
-License: use_mit_license()
+License: GPL (>= 2)
 URL: https://github.com/Demografiando/verdadecu
 BugReports: https://github.com/Demografiando/verdadecu/issues
 Encoding: UTF-8

@@ -1,0 +1,31 @@
+hecho	rama	victima
+Privación ilegal de la libertad	Policía	84
+Tortura	Policía	158
+Violencia sexual	Policía	42
+Desaparición forzada	Policía	10
+Atentado contra el derecho a la vida	Policía	25
+Ejecución extrajudicial	Policía	51
+Privación ilegal de la libertad	Ejército	152
+Tortura	Ejército	147
+Violencia sexual	Ejército	26
+Desaparición forzada	Ejército	2
+Atentado contra el derecho a la vida	Ejército	7
+Ejecución extrajudicial	Ejército	27
+Privación ilegal de la libertad	Armada	7
+Tortura	Armada	103
+Violencia sexual	Armada	
+Desaparición forzada	Armada	
+Atentado contra el derecho a la vida	Armada	1
+Ejecución extrajudicial	Armada	3
+Privación ilegal de la libertad	Aviación	5
+Tortura	Aviación	2
+Violencia sexual	Aviación	12
+Desaparición forzada	Aviación	
+Atentado contra el derecho a la vida	Aviación	
+Ejecución extrajudicial	Aviación	2
+Privación ilegal de la libertad	Operaciones conjuntas	101
+Tortura	Operaciones conjuntas	14
+Violencia sexual	Operaciones conjuntas	4
+Desaparición forzada	Operaciones conjuntas	
+Atentado contra el derecho a la vida	Operaciones conjuntas	
+Ejecución extrajudicial	Operaciones conjuntas	2

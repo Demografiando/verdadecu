@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(victimas_nacionalidad)
 }
 \description{
-Datos que contienen el número de víctimas según su nacionalidad.
+Datos que contienen el número de víctimas de violaciones de derechos humanos en Ecuador según su nacionalidad.
 }
 \keyword{datasets}

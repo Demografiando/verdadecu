@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(victimas_educacion)
 }
 \description{
-Datos que contienen el número total de víctimas según su nivel educativo.
+Datos que contienen el número total de víctimas de violaciones de derechos humanos en Ecuador según su nivel educativo.
 }
 \keyword{datasets}

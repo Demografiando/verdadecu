@@ -1,0 +1,5 @@
+lugar	victima
+Policía	33
+Fuerza Terrestre	209
+Fuerza Naval	14
+Fuerza Aérea	82

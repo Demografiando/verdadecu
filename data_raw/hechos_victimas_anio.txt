@@ -1,0 +1,82 @@
+hecho	anio	victima
+Privación ilegal de la libertad	1984	10
+Privación ilegal de la libertad	1985	32
+Privación ilegal de la libertad	1986	59
+Privación ilegal de la libertad	1987	114
+Privación ilegal de la libertad	1988	5
+Privación ilegal de la libertad	1989	1
+Privación ilegal de la libertad	1990	3
+Privación ilegal de la libertad	1992	2
+Privación ilegal de la libertad	1993	12
+Privación ilegal de la libertad	1994	1
+Privación ilegal de la libertad	1995	1
+Privación ilegal de la libertad	1996	3
+Privación ilegal de la libertad	1997	1
+Privación ilegal de la libertad	1998	3
+Privación ilegal de la libertad	1999	7
+Privación ilegal de la libertad	2000	2
+Privación ilegal de la libertad	2001	6
+Privación ilegal de la libertad	2002	1
+Privación ilegal de la libertad	2003	1
+Privación ilegal de la libertad	2006	2
+Privación ilegal de la libertad	2007	3
+Tortura	1984	13
+Tortura	1985	40
+Tortura	1986	69
+Tortura	1987	156
+Tortura	1988	7
+Tortura	1989	1
+Tortura	1990	3
+Tortura	1991	3
+Tortura	1992	6
+Tortura	1993	16
+Tortura	1994	1
+Tortura	1995	1
+Tortura	1996	3
+Tortura	1997	19
+Tortura	1998	3
+Tortura	1999	3
+Tortura	2000	2
+Tortura	2001	5
+Tortura	2002	3
+Tortura	2003	2
+Tortura	2006	2
+Tortura	2007	4
+Tortura	2008	3
+Desaparición forzada	1985	5
+Desaparición forzada	1986	1
+Desaparición forzada	1988	3
+Desaparición forzada	1990	1
+Desaparición forzada	1995	1
+Desaparición forzada	2000	2
+Desaparición forzada	2003	3
+Desaparición forzada	2004	1
+Atentado contra el derecho a la vida	1986	1
+Atentado contra el derecho a la vida	1987	11
+Atentado contra el derecho a la vida	1992	1
+Atentado contra el derecho a la vida	1993	1
+Atentado contra el derecho a la vida	1999	3
+Atentado contra el derecho a la vida	2000	1
+Atentado contra el derecho a la vida	2005	3
+Atentado contra el derecho a la vida	2006	1
+Atentado contra el derecho a la vida	2007	4
+Ejecución extrajudicial	1984	1
+Ejecución extrajudicial	1985	13
+Ejecución extrajudicial	1986	13
+Ejecución extrajudicial	1987	4
+Ejecución extrajudicial	1988	1
+Ejecución extrajudicial	1989	1
+Ejecución extrajudicial	1990	2
+Ejecución extrajudicial	1991	3
+Ejecución extrajudicial	1992	2
+Ejecución extrajudicial	1993	3
+Ejecución extrajudicial	1997	1
+Ejecución extrajudicial	1998	2
+Ejecución extrajudicial	1999	1
+Ejecución extrajudicial	2001	4
+Ejecución extrajudicial	2002	1
+Ejecución extrajudicial	2003	8
+Ejecución extrajudicial	2005	1
+Ejecución extrajudicial	2006	1
+Ejecución extrajudicial	2007	1
+Ejecución extrajudicial	2008	5

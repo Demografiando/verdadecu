@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(hechos_anio)
 }
 \description{
-Datos que contienen el número total de violaciones de los  derechos humanos por año y tipo de violación en el  periodo 1984 - 2008.
+Datos que contienen el número total de violaciones de los  derechos humanos por año y tipo de violación en el periodo 1984 - 2008 en Ecuador.
 }
 \keyword{datasets}

@@ -21,6 +21,6 @@ Tomo 5: Conclusiones y Recomendaciones
 data(responsables_institucion)
 }
 \description{
-Datos que contienen el número de presuntos responsables de las violaciones de los derechos humanos según la institución a la que pertenecen.
+Datos que contienen el número de presuntos responsables de las violaciones de los derechos humanos en Ecuador según la institución a la que pertenecen.
 }
 \keyword{datasets}

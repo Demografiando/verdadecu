@@ -1,0 +1,8 @@
+institucion	responsables
+Autoridad de gobierno	33
+Autoridad extranjera	26
+Autoridad municipal	13
+Civiles	4
+Fuerzas Armadas	130
+Funcionarios judiciales	25
+Policía Nacional	227

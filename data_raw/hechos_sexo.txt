@@ -1,0 +1,13 @@
+sexo	hecho	violacion
+mujer	Privación ilegal de la libertad	36
+mujer	Tortura	64
+mujer	Violencia sexual	63
+mujer	Ejecución extrajudicial	7
+mujer	Atentado contra el derecho a la vida	4
+mujer	Desaparición forzada	1
+hombre	Privación ilegal de la libertad	233
+hombre	Tortura	301
+hombre	Violencia sexual	23
+hombre	Ejecución extrajudicial	61
+hombre	Atentado contra el derecho a la vida	22
+hombre	Desaparición forzada	16

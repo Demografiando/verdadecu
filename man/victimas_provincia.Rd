@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(victimas_provincia)
 }
 \description{
-Datos que contienen el número de víctimas según el lugar en el que se produjeron las violaciones de derechos humanos.
+Datos que contienen el número de víctimas según el lugar en el que se produjeron las violaciones de derechos humanos en Ecuador.
 }
 \keyword{datasets}

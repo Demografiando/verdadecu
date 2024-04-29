@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(hechos_victimas_anio)
 }
 \description{
-Datos que contienen el número total de víctimas por tipo de violación de los derechos humanos y año.
+Datos que contienen el número total de víctimas por tipo de violación de los derechos humanos y año en Ecuador.
 }
 \keyword{datasets}

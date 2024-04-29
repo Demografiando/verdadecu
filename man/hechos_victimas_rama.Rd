@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(hechos_victimas_rama)
 }
 \description{
-Datos que contienen el número total de víctimas por tipo de violación de derechos humanos y según la participación de ramas de las Fuerzas Armadas y Policía Nacional.
+Datos que contienen el número total de víctimas por tipo de violación de derechos humanos y según la participación de ramas de las Fuerzas Armadas y Policía Nacional en Ecuador.
 }
 \keyword{datasets}

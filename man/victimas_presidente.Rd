@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(victimas_presidente)
 }
 \description{
-Datos que contienen el número de víctimas según el periodo presidencial en el cual ocurrieron las violaciones de derechos humanos.
+Datos que contienen el número de víctimas según el periodo presidencial en el cual ocurrieron las violaciones de derechos humanos en Ecuador.
 }
 \keyword{datasets}

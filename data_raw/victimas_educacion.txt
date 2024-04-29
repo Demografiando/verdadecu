@@ -1,0 +1,7 @@
+educacion	victima
+primaria	96
+secundaria	145
+tecnología	7
+universidad	84
+postgrado	4
+nd	120

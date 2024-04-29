@@ -21,6 +21,6 @@ Tomo 5: Conclusiones y Recomendaciones
 data(victimas)
 }
 \description{
-Objeto que contiene el nombre de las víctimas de violaciones de derechos humanos.
+Objeto que contiene el nombre de las víctimas de violaciones de derechos humanos en Ecuador.
 }
 \keyword{datasets}

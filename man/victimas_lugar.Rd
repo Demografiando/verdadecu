@@ -21,6 +21,6 @@ Tomo 1: Violaciones de los Derechos Humanos.
 data(victimas_lugar)
 }
 \description{
-Datos que contienen el número de víctimas de violaciones de derechos humanos que ocurrieron en  instalaciones policiales o militares.
+Datos que contienen el número de víctimas de violaciones de derechos humanos en Ecuador que ocurrieron en instalaciones policiales o militares.
 }
 \keyword{datasets}

@@ -1,0 +1,6 @@
+nacionalidad	victima
+Ecuador	429
+Colombia	21
+Perú	4
+España	1
+Chile	1
