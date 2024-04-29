@@ -1,0 +1,14 @@
+#' victimas_edad
+#'
+#' @description Datos que contienen el número de víctimas de violaciones de derechos humanos en Ecuador según el sexo y grupo de edad de la víctima.
+#' @usage data(victimas_edad)
+#' @source Informe de la Comisión de la Verdad Ecuador 2010. Sin Verdad No Hay Justicia.
+#' Tomo 1: Violaciones de los Derechos Humanos.
+#' \url{https://www.dpe.gob.ec/}
+#' @format Un data frame con 14 filas y 3 variables.
+#' \describe{
+#' \item{sexo}{Sexo de la víctima.}
+#' \item{edad}{Grupo etario de la víctima: 8 a 17 años, 18 a 30 años, 31 a 40 años, 41 a 50 años, 51 a 60 años, 61 a 69 años y nd (no definido).}
+#' \item{victima}{Número total de víctimas.}
+#' }
+"victimas_edad"

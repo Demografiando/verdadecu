@@ -1,0 +1,3 @@
+sexo	victima
+hombre	382
+mujer	74

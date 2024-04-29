@@ -1,0 +1,14 @@
+#' hechos_victimas_rama
+#'
+#' @description Datos que contienen el número total de víctimas por tipo de violación de derechos humanos y según la participación de ramas de las Fuerzas Armadas y Policía Nacional en Ecuador.
+#' @usage data(hechos_victimas_rama)
+#' @source Informe de la Comisión de la Verdad Ecuador 2010. Sin Verdad No Hay Justicia.
+#' Tomo 1: Violaciones de los Derechos Humanos.
+#' \url{https://www.dpe.gob.ec/}
+#' @format Un data frame con 30 filas y 3 variables.
+#' \describe{
+#' \item{hecho}{Tipo de violación de los derechos humanos: atentado contra el derecho a la vida, desaparición forzada, ejecución extrajudicial, privación ilegal de la libertad, tortura y violencia sexual. }
+#' \item{rama}{Ramas de las Fuerzas Armadas y Policía Nacional a la que pertenecen los presuntos responsables de violaciones de los derechos humanos. }
+#' \item{victima}{Número total de víctimas.}
+#' }
+"hechos_victimas_rama"

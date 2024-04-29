@@ -1,0 +1,30 @@
+provincia	ciudad	victima
+Pichincha	Quito	82
+Pichincha	Otra	2
+Guayas	Naranjal	90
+Guayas	Guayaquil	55
+El Oro	Pasaje	60
+El Oro	Santa Rosa	4
+El Oro	Otra	7
+Loja	Celica	34
+Loja	Loja	32
+Sucumbíos	Lago Agrio	8
+Sucumbíos	Shushufindi	3
+Sucumbíos	Otra	11
+Azuay	Cuenca	16
+Esmeraldas	Esmeraldas	10
+Esmeraldas	Atacames	8
+Esmeraldas	Eloy Alfaro	3
+Esmeraldas	Quinindé	2
+Esmeraldas	Otra	3
+Tungurahua	Ambato	2
+Tungurahua	Otra	1
+Los Ríos	Quevedo	2
+Los Ríos	Otra	1
+Orellana	Pindo	4
+Orellana	Coca	3
+Carchi	Tulcán	3
+Cañar	Otra	1
+Cotopaxi	Otra	1
+Imbabura	Otra	1
+Exterior	nd	7

@@ -1,0 +1,15 @@
+sexo	edad	victima
+mujer	8 a 17	4
+mujer	18 a 30	38
+mujer	31 a 40	18
+mujer	41 a 50	2
+mujer	51 a 60	2
+mujer	61 a 69	3
+mujer	nd	7
+hombre	8 a 17	21
+hombre	18 a 30	190
+hombre	31 a 40	80
+hombre	41 a 50	25
+hombre	51 a 60	9
+hombre	61 a 69	3
+hombre	nd	54

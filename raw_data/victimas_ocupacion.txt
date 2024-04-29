@@ -1,0 +1,14 @@
+ocupacion	victima
+militar	106
+estudiante	75
+minero	56
+comerciante	34
+agricultor	33
+pescador	9
+ama de casa	9
+profesor	7
+albañil	6
+sociólogo	4
+abogado	2
+policía	2
+otros/nd	113
