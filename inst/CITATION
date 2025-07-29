@@ -1,0 +1,13 @@
+citHeader("To cite package 'verdadecu' in publications use:")
+
+citEntry(entry = "Manual",
+         title = "verdadecu: Datos de la Comision de la Verdad de Ecuador",
+         author = personList(as.person("Adriana Robles"),
+                           as.person("Javier Borja")),
+         year = 2024,
+         note = "R package version 0.1.0",
+         url = "https://github.com/Demografiando/verdadecu",
+         textVersion = paste("Adriana Robles and Javier Borja (2024).",
+                           "verdadecu: Datos de la Comision de la Verdad de Ecuador.",
+                           "R package version 0.1.0.",
+                           "https://github.com/Demografiando/verdadecu"))

@@ -1,0 +1,96 @@
+---
+title: "Introducción a verdadecu"
+author: "Adriana Robles y Javier Borja"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introducción a verdadecu}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Introducción
+
+El paquete `verdadecu` proporciona acceso a los datos recabados por la Comisión de la Verdad de Ecuador. Estos datos contienen información sobre violaciones de derechos humanos ocurridas en Ecuador durante el período 1984-2008.
+
+## Instalación y carga del paquete
+
+```{r}
+# Cargar el paquete
+library(verdadecu)
+```
+
+## Datos disponibles
+
+El paquete incluye varios conjuntos de datos. Puedes ver todos los datos disponibles con:
+
+```{r}
+# Ver todos los datos disponibles
+data(package = "verdadecu")
+```
+
+## Ejemplos de uso
+
+### Datos de víctimas por año
+
+```{r}
+# Cargar datos de víctimas por año
+data(victimas_anio)
+head(victimas_anio)
+```
+
+### Datos de víctimas por provincia
+
+```{r}
+# Cargar datos de víctimas por provincia
+data(victimas_provincia)
+head(victimas_provincia)
+```
+
+### Datos de hechos por año
+
+```{r}
+# Cargar datos de hechos por año
+data(hechos_anio)
+head(hechos_anio)
+```
+
+### Datos de víctimas por sexo
+
+```{r}
+# Cargar datos de víctimas por sexo
+data(victimas_sexo)
+head(victimas_sexo)
+```
+
+## Análisis básico
+
+### Total de víctimas por año
+
+```{r}
+# Calcular total de víctimas por año
+total_por_anio <- aggregate(victima ~ anio, data = victimas_anio, sum)
+head(total_por_anio)
+```
+
+### Top 5 provincias con más víctimas
+
+```{r}
+# Calcular total de víctimas por provincia
+total_por_provincia <- aggregate(victima ~ provincia, data = victimas_provincia, sum)
+top_5_provincias <- head(total_por_provincia[order(-total_por_provincia$victima), ], 5)
+top_5_provincias
+```
+
+## Información sobre los datos
+
+Todos los datos incluidos en este paquete provienen del Informe de la Comisión de la Verdad Ecuador 2010: "Sin Verdad No Hay Justicia". Los datos han sido sistematizados y organizados para facilitar su análisis en R.
+
+Para más información sobre la metodología y el contexto de los datos, consulta el informe completo disponible en: https://www.dpe.gob.ec/

@@ -9,7 +9,6 @@ Un data frame con 458 filas y 2 variables.
 \describe{
 \item{presunto_responsable}{Nombre de los presuntos responsables de las violaciones de derechos humanos.}
 \item{caso}{Casos en los que los presuntos responsables fueron señalados. }
-\item{}{}
 }
 }
 \source{

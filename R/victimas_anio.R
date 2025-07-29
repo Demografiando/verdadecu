@@ -9,6 +9,5 @@
 #' \describe{
 #' \item{anio}{Año en el que las violaciones de los derechos humanos ocurrieron. }
 #' \item{victima}{Número total de víctimas.}
-#' \item{}{}
 #' }
 "victimas_anio"

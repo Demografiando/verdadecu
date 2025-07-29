@@ -9,6 +9,5 @@
 #' \describe{
 #' \item{institucion}{Institución a la que pertenecen los  presuntos responsables de las violaciones de los derechos humanos.}
 #' \item{responsables}{Número de presuntos responsables de las violaciones de los derechos humanos.}
-#' \item{}{}
 #' }
 "responsables_institucion"

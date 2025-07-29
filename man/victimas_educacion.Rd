@@ -9,7 +9,6 @@ Un data frame con 6 filas y 2 variables.
 \describe{
 \item{educacion}{Nivel educativo de la víctima.}
 \item{victima}{Número total de víctimas.}
-\item{}{}
 }
 }
 \source{

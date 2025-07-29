@@ -9,6 +9,5 @@
 #' \describe{
 #' \item{ocupacion}{Ocupación de la víctima.}
 #' \item{victima}{Número total de víctimas.}
-#' \item{}{}
 #' }
 "victimas_ocupacion"

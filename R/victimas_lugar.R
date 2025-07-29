@@ -9,6 +9,5 @@
 #' \describe{
 #' \item{lugar}{Instalaciones policiales o militares en donde ocurrieron las violaciones de derechos humanos.}
 #' \item{victima}{Número total de víctimas.}
-#' \item{}{}
 #' }
 "victimas_lugar"

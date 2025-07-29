@@ -9,6 +9,5 @@
 #' \describe{
 #' \item{presidente}{Presidente de la República del periodo correspondiente en el cual ocurrieron las violaciones de derechos humanos. }
 #' \item{victima}{Número total de víctimas.}
-#' \item{}{}
 #' }
 "victimas_presidente"

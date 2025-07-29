@@ -8,8 +8,6 @@
 Un data frame con 456 filas y 1 variable.
 \describe{
 \item{victimas}{Nombre de la víctima.}
-\item{}{}
-\item{}{}
 }
 }
 \source{

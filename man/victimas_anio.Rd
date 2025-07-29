@@ -9,7 +9,6 @@ Un data frame con 25 filas y 2 variables.
 \describe{
 \item{anio}{Año en el que las violaciones de los derechos humanos ocurrieron. }
 \item{victima}{Número total de víctimas.}
-\item{}{}
 }
 }
 \source{

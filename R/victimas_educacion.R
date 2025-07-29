@@ -9,6 +9,5 @@
 #' \describe{
 #' \item{educacion}{Nivel educativo de la víctima.}
 #' \item{victima}{Número total de víctimas.}
-#' \item{}{}
 #' }
 "victimas_educacion"

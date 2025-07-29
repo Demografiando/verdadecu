@@ -9,6 +9,5 @@
 #' \describe{
 #' \item{sexo}{Sexo de la víctima.}
 #' \item{victima}{Número total de víctimas.}
-#' \item{}{}
 #' }
 "victimas_sexo"
