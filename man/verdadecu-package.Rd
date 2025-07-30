@@ -7,7 +7,7 @@
 \title{verdadecu: Datos de la Comision de la Verdad de Ecuador}
 \source{
 Informe de la Comisión de la Verdad Ecuador 2010. Sin Verdad No Hay Justicia.
-\url{https://www.dpe.gob.ec/}
+\url{https://demografiando.pro/informe-verdad/}
 }
 \description{
 El paquete \code{verdadecu} proporciona acceso a los datos recabados por la

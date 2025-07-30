@@ -14,4 +14,9 @@
 ^codecov\.yml$
 ^\.Rprofile$
 ^\.Rhistory$
-^LICENSE$
+^\.DS_Store$
+^\.Rcheck/$
+^R/\.Rcheck/$
+^verdadecu\.Rcheck/$
+^doc$
+^Meta$

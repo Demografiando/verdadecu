@@ -1,13 +1,37 @@
 #' responsables
 #'
-#' @description Datos que contienen el nombre de los presuntos responsables de las violaciones de derechos humanos en Ecuador y el o los casos en los que fueron señalados.
+#' @description Datos que contienen información sobre los responsables de violaciones de derechos humanos en Ecuador.
 #' @usage data(responsables)
 #' @source Informe de la Comisión de la Verdad Ecuador 2010. Sin Verdad No Hay Justicia.
-#' Tomo 5: Conclusiones y Recomendaciones
-#' \url{https://www.dpe.gob.ec/}
-#' @format Un data frame con 458 filas y 2 variables.
+#' Tomo 1: Violaciones de los Derechos Humanos.
+#' \url{https://demografiando.pro/informe-verdad/}
+#' @format Un data frame con múltiples filas y variables.
 #' \describe{
-#' \item{presunto_responsable}{Nombre de los presuntos responsables de las violaciones de derechos humanos.}
-#' \item{caso}{Casos en los que los presuntos responsables fueron señalados. }
+#' \item{responsable}{Nombre del responsable de la violación de derechos humanos.}
+#' \item{otros_campos}{Otros campos relacionados con el responsable.}
 #' }
+#' @examples
+#' # Cargar los datos
+#' data(responsables)
+#' 
+#' # Ver las primeras filas
+#' head(responsables)
+#' 
+#' # Ver la estructura de los datos
+#' str(responsables)
+#' 
+#' # Resumen estadístico
+#' summary(responsables)
+#' 
+#' # Número total de responsables
+#' nrow(responsables)
+#' 
+#' # Ver algunos nombres de responsables
+#' head(responsables$responsable, 10)
+#' 
+#' # Buscar responsables específicos (ejemplo)
+#' # grep("García", responsables$responsable, value = TRUE)
+#' 
+#' # Análisis de frecuencia de nombres
+#' # table(responsables$responsable)
 "responsables"

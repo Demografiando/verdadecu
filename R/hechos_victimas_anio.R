@@ -4,7 +4,7 @@
 #' @usage data(hechos_victimas_anio)
 #' @source Informe de la Comisión de la Verdad Ecuador 2010. Sin Verdad No Hay Justicia.
 #' Tomo 1: Violaciones de los Derechos Humanos.
-#' \url{https://www.dpe.gob.ec/}
+#' \url{https://demografiando.pro/informe-verdad/}
 #' @format Un data frame con 81 filas y 3 variables.
 #' \describe{
 #' \item{hecho}{Tipo de violación de los derechos humanos: atentado contra el derecho a la vida, desaparición forzada, ejecución extrajudicial, privación ilegal de la libertad, tortura y violencia sexual. }
