@@ -13,7 +13,7 @@ Un data frame con 456 filas y 1 variable.
 \source{
 Informe de la Comisión de la Verdad Ecuador 2010. Sin Verdad No Hay Justicia.
 Tomo 5: Conclusiones y Recomendaciones
-\url{https://www.dpe.gob.ec/}
+\url{https://demografiando.pro/informe-verdad/}
 }
 \usage{
 data(victimas)

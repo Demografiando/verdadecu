@@ -1,17 +1,18 @@
 Package: verdadecu
 Type: Package
-Title: Datos de la Comision de la Verdad de Ecuador
-Version: 0.1.0
+Title: Datos De La Comision De La Verdad De Ecuador
+Version: 0.2.0
+Author: Adriana Robles [aut] (ORCID: <https://orcid.org/0000-0001-7202-6523>), Javier Borja [aut, cre]
 Authors@R: c(
     person("Adriana", "Robles", email = "adriana@demografiando.pro",
-    role = c("aut","cre"), comment = c(ORCID = "0000-0001-7202-6523")),
+    role = c("aut"), comment = c(ORCID = "0000-0001-7202-6523")),
     person("Javier", "Borja", email = "javier@demografiando.pro",
-    role = c("aut")))
-Maintainer: Adriana Robles <adriana@demografiando.pro>
-Description: Obtenga informaci'on de los datos recabados por la comisi'on de la verdad de
-    Ecuador. Extraiga informaci'on sistematizada para el an'alisis de derechos humanos
+    role = c("aut","cre")))
+Maintainer: Javier Borja <javier@demografiando.pro>
+Description: Obtenga informació de los datos recabados por la comisión de la verdad de
+    Ecuador. Extraiga información sistematizada para el análisis de derechos humanos
     en el Ecuador.
-License: GPL (>= 2)
+License: GPL (>= 2) | file LICENSE
 URL: https://github.com/Demografiando/verdadecu
 BugReports: https://github.com/Demografiando/verdadecu/issues
 Encoding: UTF-8
