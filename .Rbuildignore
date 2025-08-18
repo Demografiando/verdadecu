@@ -14,7 +14,7 @@
 ^codecov\.yml$
 ^\.Rprofile$
 ^\.Rhistory$
-^\.DS_Store$
+(^|/)\.DS_Store$
 ^\.Rcheck/$
 ^R/\.Rcheck/$
 ^verdadecu\.Rcheck/$
