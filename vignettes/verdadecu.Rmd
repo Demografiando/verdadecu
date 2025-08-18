@@ -94,4 +94,5 @@ top_5_provincias
 Todos los datos incluidos en este paquete provienen del Informe de la Comisión de la Verdad Ecuador 2010: "Sin Verdad No Hay Justicia". Los datos han sido sistematizados y organizados para facilitar su análisis en R.
 
 Para más información sobre la metodología y el contexto de los datos, consulta el informe completo disponible en: 
-- https://demografiando.pro/informe-verdad/
+- **Informe principal:** [Informe de la Comisión de la Verdad, Ecuador 2010: sin verdad no hay justicia](https://biblioteca.corteidh.or.cr/documento/59430) - Biblioteca de la Corte Interamericana de los Derechos Humanos
+- **Respaldo adicional:** [Informe de la Verdad Ecuador](https://demografiando.pro/informe-verdad/) - Demografiando
