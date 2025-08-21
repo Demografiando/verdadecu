@@ -1,6 +1,6 @@
 # verdadecu: Datos de la Comisión de la Verdad de Ecuador
 
-[![](https://cranlogs.r-pkg.org/badges/ggplot2)](https://cran.rstudio.com/web/packages/ggplot2/index.html)
+[![](https://cranlogs.r-pkg.org/badges/verdadecu)](https://cran.rstudio.com/web/packages/verdadecu/index.html)
 
 ## Descripción
 
