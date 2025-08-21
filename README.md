@@ -1,5 +1,7 @@
 # verdadecu: Datos de la Comisión de la Verdad de Ecuador
 
+[![](https://cranlogs.r-pkg.org/badges/ggplot2)](https://cran.rstudio.com/web/packages/ggplot2/index.html)
+
 ## Descripción
 
 El paquete `verdadecu` proporciona acceso a los datos recabados por la Comisión de la Verdad de Ecuador. Permite extraer información sistematizada para el análisis de derechos humanos en Ecuador.
