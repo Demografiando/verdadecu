@@ -129,6 +129,29 @@ El paquete contiene los siguientes datasets:
 
 Los warnings sobre caracteres no-ASCII durante la instalación o verificación del paquete son **normales y esperados**.
 
+## Testing
+
+El paquete incluye un conjunto completo de pruebas para garantizar la integridad y consistencia de los datos:
+
+```r
+# Ejecutar todas las pruebas
+library(testthat)
+test_package("verdadecu")
+
+# Ejecutar pruebas específicas
+test_file("tests/testthat/test-data-integrity.R")
+test_file("tests/testthat/test-data-validation.R")
+test_file("tests/testthat/test-data-consistency.R")
+test_file("tests/testthat/test-examples.R")
+```
+
+Las pruebas verifican:
+- **Integridad de datos**: Todos los datasets se cargan correctamente
+- **Estructura de datos**: Columnas esperadas y tipos de datos
+- **Validación de datos**: Rangos de años, valores no negativos, categorías válidas
+- **Consistencia**: Relaciones entre datasets, totales razonables
+- **Ejemplos**: Todos los ejemplos de la documentación funcionan correctamente
+
 ## Documentación
 
 Para más información:
