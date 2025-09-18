@@ -34,12 +34,22 @@ jobs:
             install_path = file.path(normalizePath(Sys.getenv("RUNNER_TEMP"), winslash = "/"), "package")
           )
           covr::to_cobertura(cov)
+
+          # Also generate a coverage report in the console
+          print(cov)
+
+          # Save coverage percentage for the badge
+          percent <- covr::percent_coverage(cov)
+          cat("Code coverage:", round(percent, 2), "%\n")
         shell: Rscript {0}
 
-      - uses: codecov/codecov-action@v4
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         with:
-          fail_ci_if_error: ${{ github.event_name != 'pull_request' && true || false }}
+          fail_ci_if_error: false
           file: ./cobertura.xml
-          plugin: noop
-          disable_search: true
+          flags: unittests
+          name: codecov-umbrella
           token: ${{ secrets.CODECOV_TOKEN }}
+        continue-on-error: true
