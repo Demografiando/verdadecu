@@ -26,3 +26,5 @@
 ^coverage\.xml$
 ^paper\.md$
 ^paper\.bib$
+^coverage-report\.html$
+^coverage\.xml$
