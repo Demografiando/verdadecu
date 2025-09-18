@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
     steps:
       - uses: actions/checkout@v4
@@ -23,87 +24,53 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::covr, any::xml2, any::DT, any::htmltools
+          extra-packages: any::covr
           needs: coverage
 
       - name: Test coverage
         run: |
-          cov <- covr::package_coverage(
+          # Run coverage with covr
+          library(covr)
+          cov <- package_coverage(
+            type = "tests",
             quiet = FALSE,
             clean = FALSE,
             install_path = file.path(normalizePath(Sys.getenv("RUNNER_TEMP"), winslash = "/"), "package")
           )
 
-          # Generate coverage report
+          # Print coverage summary
           print(cov)
 
-          # Calculate coverage percentage, handling NaN for data packages
-          percent <- covr::percent_coverage(cov)
-          if (is.nan(percent)) {
-            percent <- 100  # Data packages with no R functions have 100% coverage
+          # Calculate coverage percentage
+          percent <- percent_coverage(cov)
+
+          # Handle data packages with no R code
+          if (is.nan(percent) || is.null(percent)) {
             cat("\n====================================\n")
-            cat("DATA PACKAGE - No R code to cover\n")
-            cat("Tests verify data integrity\n")
+            cat("DATA PACKAGE - No executable R code\n")
+            cat("Tests verify data integrity only\n")
             cat("====================================\n\n")
+            # For data packages, we still generate a report showing tests pass
+            percent <- 0
           } else {
             cat("\n====================================\n")
             cat("TOTAL CODE COVERAGE:", round(percent, 2), "%\n")
             cat("====================================\n\n")
           }
 
-          # Save coverage report as artifact
-          tryCatch({
-            covr::to_cobertura(cov, filename = "coverage.xml")
-            cat("Coverage report saved as coverage.xml\n")
-          }, error = function(e) {
-            cat("Note: Could not generate cobertura report for data package\n")
-            # Create a minimal valid Cobertura XML for data packages
-            xml_content <- paste0(
-              '<?xml version="1.0"?>',
-              '<coverage line-rate="1.0" branch-rate="1.0" lines-covered="0" lines-valid="0" ',
-              'branches-covered="0" branches-valid="0" complexity="0" version="1" timestamp="">',
-              '<sources><source>R</source></sources>',
-              '<packages><package name="verdadecu" line-rate="1.0" branch-rate="1.0" complexity="0">',
-              '<classes/></package></packages></coverage>'
-            )
-            writeLines(xml_content, "coverage.xml")
-            cat("Created placeholder coverage.xml for data package\n")
-          })
-
-          # Try to create HTML report, but don't fail if it doesn't work for data packages
-          tryCatch({
-            covr::report(cov, file = "coverage-report.html", browse = FALSE)
-          }, error = function(e) {
-            cat("Note: Could not generate HTML report for data package\n")
-            # Create a simple HTML report manually
-            html_content <- paste0(
-              "<html><body><h1>Test Coverage Report</h1>",
-              "<p>This is a data package. All ", length(list.files("tests/testthat", pattern = "^test.*\\.R$")),
-              " test files have been executed successfully.</p>",
-              "<p>Tests verify data integrity, validation, and consistency.</p>",
-              "</body></html>"
-            )
-            writeLines(html_content, "coverage-report.html")
-          })
+          # Use codecov() function from covr package - this is the recommended way
+          # It automatically generates and uploads the coverage report
+          codecov(
+            coverage = cov,
+            token = Sys.getenv("CODECOV_TOKEN"),
+            quiet = FALSE
+          )
         shell: Rscript {0}
 
-      - name: Upload coverage results
-        uses: actions/upload-artifact@v4
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
         with:
-          name: coverage-results
-          path: |
-            coverage.xml
-            coverage-report.html
-
-      # Only attempt Codecov upload if token exists
-      - name: Upload to Codecov
-        if: env.CODECOV_TOKEN != ''
-        uses: codecov/codecov-action@v4
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-        with:
-          file: ./coverage.xml
-          flags: unittests
-          name: codecov-umbrella
+          token: ${{ secrets.CODECOV_TOKEN }}
+          slug: Demografiando/verdadecu
           fail_ci_if_error: false
-        continue-on-error: true
+          verbose: true
