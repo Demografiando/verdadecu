@@ -2,7 +2,6 @@
 
 [![R-CMD-check](https://github.com/Demografiando/verdadecu/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/Demografiando/verdadecu/actions/workflows/check-standard.yaml)
 [![test-coverage](https://github.com/Demografiando/verdadecu/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/Demografiando/verdadecu/actions/workflows/test-coverage.yaml)
-[![codecov](https://codecov.io/gh/Demografiando/verdadecu/branch/tests/graph/badge.svg)](https://codecov.io/gh/Demografiando/verdadecu)
 [![](https://cranlogs.r-pkg.org/badges/grand-total/verdadecu)](https://CRAN.R-project.org/package=verdadecu)
 
 ## Descripción
@@ -149,6 +148,7 @@ test_file("tests/testthat/test-examples.R")
 ```
 
 Las pruebas verifican:
+
 - **Integridad de datos**: Todos los datasets se cargan correctamente
 - **Estructura de datos**: Columnas esperadas y tipos de datos
 - **Validación de datos**: Rangos de años, valores no negativos, categorías válidas

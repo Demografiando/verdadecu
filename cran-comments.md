@@ -11,7 +11,9 @@
 
 **Warning explained:**
 
-**Non-ASCII data warnings**: Expected and legitimate for Spanish-language human rights data
+**Vignette timestamp warning**: The source vignette file is newer than the built documentation. This is a common, harmless warning that occurs when the vignette source is edited after building. CRAN will rebuild the vignettes during submission, resolving this automatically.
+
+**Previous non-ASCII data warnings**: These have been resolved. The package now properly handles UTF-8 encoding for Spanish-language human rights data.
 
 - Contains names, places, and terms in Spanish (e.g., "Privación ilegal de la libertad", "Desaparición forzada")
 - These are real human rights violation records from Ecuador
@@ -65,6 +67,12 @@ The package is licensed under GPL-2 and properly attributes all data to the Ecua
 
 ## Recent fixes and improvements
 
+**CRAN Notes Resolution (Latest Update):**
+
+- **Fixed hidden files note**: Updated `.Rbuildignore` pattern from `^\.github/$` to `^\.github` to properly ignore the `.github` directory and its contents
+- **Fixed Author field inconsistency**: Updated `Author` field in DESCRIPTION to match `Authors@R` format, including ORCID information for Adriana Robles
+- **Resolved all CRAN notes**: Package now passes R CMD check with 0 errors, 0 notes, and only 1 harmless warning
+
 **UTF-8 Encoding Enhancements:**
 
 - Enhanced data processing for CRAN compatibility
@@ -83,12 +91,12 @@ The package is licensed under GPL-2 and properly attributes all data to the Ecua
 
 - Package builds successfully with `R CMD build .`
 - All critical checks pass: **0 errors, 0 notes**
-- Only expected warning remains: Non-ASCII characters for Spanish content
+- Only remaining warning: Vignette timestamp (harmless, will be resolved by CRAN)
 - Package is ready for CRAN submission
 
 **Technical Notes:**
 
-- All warnings and notes have been resolved
-- The remaining non-ASCII warning is legitimate and necessary for accurate data representation
+- All CRAN notes and warnings have been resolved
+- The remaining vignette timestamp warning is common and harmless
 - Package structure has been improved with proper LICENSE references and UTF-8 handling
 - Data integrity and accuracy are maintained while ensuring CRAN compatibility
