@@ -2,6 +2,7 @@
 ^\.Rproj\.user$
 ^cran-comments\.md$
 ^data_raw/.*\.txt$
+^data_raw/$
 ^README\.Rmd$
 ^_pkgdown\.yml$
 ^docs/$
@@ -16,6 +17,8 @@
 ^\.Rhistory$
 (^|/)\.DS_Store$
 ^\.Rcheck/$
+^.*\.Rcheck/$
+^\.\.Rcheck/$
 ^R/\.Rcheck/$
 ^verdadecu\.Rcheck/$
 ^doc$
@@ -24,7 +27,7 @@
 ^CONTRIBUTING\.md$
 ^coverage-report\.html$
 ^coverage\.xml$
+^coverage\.txt$
 ^paper\.md$
 ^paper\.bib$
-^coverage-report\.html$
-^coverage\.xml$
+^verdadecu_.*\.tar\.gz$
