@@ -21,3 +21,8 @@
 ^doc$
 ^Meta$
 ^LICENSE$
+^CONTRIBUTING\.md$
+^coverage-report\.html$
+^coverage\.xml$
+^paper\.md$
+^paper\.bib$
