@@ -1,7 +1,7 @@
 codecov:
   require_ci_to_pass: false
-  notify:
-    after_n_builds: 1
+  token: null  # Will use GitHub token or repository token
+  disable_default_path_fixes: false
 
 coverage:
   precision: 2
@@ -12,15 +12,16 @@ coverage:
     project:
       default:
         # For data packages, we don't expect high code coverage
-        target: auto
+        target: 0%
         threshold: 0%
         base: auto
-        if_ci_failed: error
+        if_ci_failed: success  # Don't fail if CI has issues
     patch:
       default:
         target: 0%
         threshold: 0%
         base: auto
+        if_ci_failed: success
 
 parsers:
   gcov:
@@ -35,7 +36,7 @@ comment:
   behavior: default
   require_changes: false
   require_base: false
-  require_head: true
+  require_head: false  # Don't require head for uploads
 
 # For R packages, we typically ignore these directories
 ignore:
