@@ -31,11 +31,16 @@ jobs:
         run: |
           # Run coverage with covr
           library(covr)
+
+          # Run tests first to ensure they pass
+          library(testthat)
+          test_results <- test_package("verdadecu", reporter = "summary")
+
+          # Generate coverage report
           cov <- package_coverage(
             type = "tests",
             quiet = FALSE,
-            clean = FALSE,
-            install_path = file.path(normalizePath(Sys.getenv("RUNNER_TEMP"), winslash = "/"), "package")
+            clean = FALSE
           )
 
           # Print coverage summary
@@ -45,32 +50,43 @@ jobs:
           percent <- percent_coverage(cov)
 
           # Handle data packages with no R code
-          if (is.nan(percent) || is.null(percent)) {
+          if (is.nan(percent) || is.null(percent) || length(cov) == 0) {
             cat("\n====================================\n")
             cat("DATA PACKAGE - No executable R code\n")
             cat("Tests verify data integrity only\n")
+            cat("All", length(test_results), "test files passed\n")
             cat("====================================\n\n")
-            # For data packages, we still generate a report showing tests pass
-            percent <- 0
+
+            # Create a minimal coverage file for data packages
+            writeLines("0", "coverage.txt")
+            cat("Coverage: 0% (data package - no R functions)\n")
           } else {
             cat("\n====================================\n")
             cat("TOTAL CODE COVERAGE:", round(percent, 2), "%\n")
             cat("====================================\n\n")
-          }
 
-          # Use codecov() function from covr package - this is the recommended way
-          # It automatically generates and uploads the coverage report
-          codecov(
-            coverage = cov,
-            token = Sys.getenv("CODECOV_TOKEN"),
-            quiet = FALSE
-          )
+            # Generate coverage reports
+            covr::to_cobertura(cov, filename = "coverage.xml")
+            writeLines(as.character(percent), "coverage.txt")
+          }
         shell: Rscript {0}
 
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v5
+        if: env.CODECOV_TOKEN != ''
+        uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: Demografiando/verdadecu
+          files: ./coverage.xml
+          flags: unittests
+          name: codecov-umbrella
           fail_ci_if_error: false
           verbose: true
+        continue-on-error: true
+
+      - name: Upload coverage as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: |
+            coverage.xml
+            coverage.txt
