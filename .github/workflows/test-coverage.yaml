@@ -33,23 +33,40 @@ jobs:
             clean = FALSE,
             install_path = file.path(normalizePath(Sys.getenv("RUNNER_TEMP"), winslash = "/"), "package")
           )
-          covr::to_cobertura(cov)
 
-          # Also generate a coverage report in the console
+          # Generate coverage report
           print(cov)
 
           # Save coverage percentage for the badge
           percent <- covr::percent_coverage(cov)
-          cat("Code coverage:", round(percent, 2), "%\n")
+          cat("\n====================================\n")
+          cat("TOTAL CODE COVERAGE:", round(percent, 2), "%\n")
+          cat("====================================\n\n")
+
+          # Save coverage report as artifact
+          covr::to_cobertura(cov, filename = "coverage.xml")
+
+          # Also create an HTML report
+          covr::report(cov, file = "coverage-report.html", browse = FALSE)
         shell: Rscript {0}
 
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4
-        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+      - name: Upload coverage results
+        uses: actions/upload-artifact@v3
         with:
-          fail_ci_if_error: false
-          file: ./cobertura.xml
+          name: coverage-results
+          path: |
+            coverage.xml
+            coverage-report.html
+
+      # Only attempt Codecov upload if token exists
+      - name: Upload to Codecov
+        if: env.CODECOV_TOKEN != ''
+        uses: codecov/codecov-action@v4
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        with:
+          file: ./coverage.xml
           flags: unittests
           name: codecov-umbrella
-          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: false
         continue-on-error: true
