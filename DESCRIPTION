@@ -2,7 +2,7 @@ Package: verdadecu
 Type: Package
 Title: Data from the Ecuador Truth Commission
 Version: 1.0.0
-Author: Adriana Robles [aut], Javier Borja [aut, cre]
+Author: Adriana Robles [aut] (ORCID: <https://orcid.org/0000-0001-7202-6523>), Javier Borja [aut, cre]
 Authors@R: c(
     person("Adriana", "Robles", email = "adriana@demografiando.pro",
            role = c("aut"), comment = c(ORCID = "0000-0001-7202-6523")),
