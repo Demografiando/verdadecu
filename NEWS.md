@@ -1,3 +1,8 @@
+# verdadecu 1.0.1
+
+- Declared Spanish as the vignette document language (`lang="es"`) following CRAN feedback.
+- Added prebuilt vignette index (`inst/doc/meta/vignette.rds`) for CRAN incoming checks.
+
 # verdadecu 1.0.0
 
 ## Major Release - JOSS Submission Ready

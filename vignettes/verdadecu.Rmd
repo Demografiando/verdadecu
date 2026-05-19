@@ -2,6 +2,7 @@
 title: "Introducción a verdadecu"
 author: "Adriana Robles y Javier Borja"
 date: "`r Sys.Date()`"
+lang: es
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introducción a verdadecu}

@@ -31,3 +31,4 @@
 ^paper\.md$
 ^paper\.bib$
 ^verdadecu_.*\.tar\.gz$
+^\.R_libs$

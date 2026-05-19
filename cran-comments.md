@@ -1,3 +1,12 @@
+## Resubmission
+
+This is a resubmission of verdadecu 1.0.1 (following 1.0.0).
+
+Changes since 1.0.0:
+
+- Vignette HTML declares `lang="es"` (CRAN VNU feedback).
+- Added `inst/doc/meta/vignette.rds` (prebuilt vignette index required when shipping vignettes in `inst/doc`).
+
 ## Test environments
 
 - local R installation, R 4.5.1
@@ -7,20 +16,7 @@
 
 ## R CMD check results
 
-0 errors | 1 warning | 0 notes
-
-**Warning explained:**
-
-**Vignette timestamp warning**: The source vignette file is newer than the built documentation. This is a common, harmless warning that occurs when the vignette source is edited after building. CRAN will rebuild the vignettes during submission, resolving this automatically.
-
-**Previous non-ASCII data warnings**: These have been resolved. The package now properly handles UTF-8 encoding for Spanish-language human rights data.
-
-- Contains names, places, and terms in Spanish (e.g., "Privación ilegal de la libertad", "Desaparición forzada")
-- These are real human rights violation records from Ecuador
-- All data files are saved with UTF-8 encoding using `enc2utf8()` function
-- DESCRIPTION file includes `Encoding: UTF-8`
-- Non-ASCII characters are essential for accurate representation of original data
-- Data has been reprocessed with explicit UTF-8 encoding handling
+0 errors | 0 warnings | 0 notes
 
 ## Downstream dependencies
 
@@ -38,65 +34,10 @@ This is a data package containing datasets from the Ecuador Truth Commission (Co
 - Proper citation information
 - All data sources properly attributed to the Ecuador Truth Commission 2010 report
 
-**Data description:**
-The datasets include information about:
+**About non-ASCII data:**
 
-- Victims of human rights violations (names, demographics, locations)
-- Perpetrators and responsible institutions
-- Types of violations (illegal detention, forced disappearance, extrajudicial execution)
-- Geographic and temporal distribution of violations
-- Educational and occupational information of victims
-
-**About non-ASCII data warnings:**
-The package contains data in Spanish, which necessarily includes non-ASCII characters (e.g., á, é, í, ñ, ó, ú, etc.). These characters are essential for the correct representation of:
-
-- Spanish names and surnames
-- Geographic locations in Ecuador
-- Institutional names and terms
-- Types of human rights violations
-
-All data files are saved with UTF-8 encoding, and the DESCRIPTION file includes `Encoding: UTF-8`. These non-ASCII characters are required for accurate representation of the original data from the Comisión de la Verdad de Ecuador.
-
-- The DESCRIPTION field includes Spanish words (e.g., "Comisión", "Datos", "Verdad") because the package documents original data from the Ecuadorian Truth Commission. This is intentional and necessary for faithful representation.
-
-**Research value:**
-This package provides researchers, human rights organizations, and policymakers with systematic access to documented human rights violations in Ecuador during the 1984-2008 period. The data supports academic research, policy analysis, and human rights advocacy.
+The package contains data in Spanish, which necessarily includes non-ASCII characters. All data files use UTF-8 encoding, and the DESCRIPTION file includes `Encoding: UTF-8`. These characters are required for accurate representation of the original data from the Comisión de la Verdad de Ecuador.
 
 **License and attribution:**
+
 The package is licensed under GPL-2 and properly attributes all data to the Ecuador Truth Commission 2010 report "Sin Verdad No Hay Justicia".
-
-## Recent fixes and improvements
-
-**CRAN Notes Resolution (Latest Update):**
-
-- **Fixed hidden files note**: Updated `.Rbuildignore` pattern from `^\.github/$` to `^\.github` to properly ignore the `.github` directory and its contents
-- **Fixed Author field inconsistency**: Updated `Author` field in DESCRIPTION to match `Authors@R` format, including ORCID information for Adriana Robles
-- **Resolved all CRAN notes**: Package now passes R CMD check with 0 errors, 0 notes, and only 1 harmless warning
-
-**UTF-8 Encoding Enhancements:**
-
-- Enhanced data processing for CRAN compatibility
-- All data files now processed with explicit UTF-8 encoding using `enc2utf8()`
-- Raw data files read with `fileEncoding = "UTF-8"`
-- All character columns properly encoded before saving
-
-**Package Structure Improvements:**
-
-- Fixed DESCRIPTION file format issues (missing parentheses, proper field structure)
-- Created proper GPL-2 LICENSE file and included in package
-- Updated .Rbuildignore to properly include LICENSE file
-- Enhanced package documentation and examples
-
-**Current Status:**
-
-- Package builds successfully with `R CMD build .`
-- All critical checks pass: **0 errors, 0 notes**
-- Only remaining warning: Vignette timestamp (harmless, will be resolved by CRAN)
-- Package is ready for CRAN submission
-
-**Technical Notes:**
-
-- All CRAN notes and warnings have been resolved
-- The remaining vignette timestamp warning is common and harmless
-- Package structure has been improved with proper LICENSE references and UTF-8 handling
-- Data integrity and accuracy are maintained while ensuring CRAN compatibility

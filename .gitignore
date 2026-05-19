@@ -11,6 +11,7 @@
 
 # R package check artifacts
 *.Rcheck/
+.R_libs/
 
 # Documentation
 docs/
