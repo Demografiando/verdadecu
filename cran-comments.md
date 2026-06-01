@@ -1,8 +1,8 @@
 ## Resubmission
 
-This is a resubmission of verdadecu 1.0.1 (following the initial 1.0.1 submission).
+This is a resubmission of verdadecu 1.0.2 (following 1.0.1).
 
-Changes since the previous 1.0.1 submission:
+Changes since 1.0.1:
 
 - Reinforced vignette HTML language via `lang: es` and Pandoc `lang=es` variable for robust rebuilds on CRAN (VNU feedback).
 
