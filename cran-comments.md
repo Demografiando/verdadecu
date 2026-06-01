@@ -1,11 +1,10 @@
 ## Resubmission
 
-This is a resubmission of verdadecu 1.0.1 (following 1.0.0).
+This is a resubmission of verdadecu 1.0.1 (following the initial 1.0.1 submission).
 
-Changes since 1.0.0:
+Changes since the previous 1.0.1 submission:
 
-- Vignette HTML declares `lang="es"` (CRAN VNU feedback).
-- Added `inst/doc/meta/vignette.rds` (prebuilt vignette index required when shipping vignettes in `inst/doc`).
+- Reinforced vignette HTML language via `lang: es` and Pandoc `lang=es` variable for robust rebuilds on CRAN (VNU feedback).
 
 ## Test environments
 

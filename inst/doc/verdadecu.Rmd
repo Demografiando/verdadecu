@@ -3,7 +3,11 @@ title: "Introducción a verdadecu"
 author: "Adriana Robles y Javier Borja"
 date: "`r Sys.Date()`"
 lang: es
-output: rmarkdown::html_vignette
+output:
+  rmarkdown::html_vignette:
+    pandoc_args:
+      - "-V"
+      - "lang=es"
 vignette: >
   %\VignetteIndexEntry{Introducción a verdadecu}
   %\VignetteEngine{knitr::rmarkdown}

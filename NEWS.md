@@ -2,6 +2,7 @@
 
 - Declared Spanish as the vignette document language (`lang="es"`) following CRAN feedback.
 - Added prebuilt vignette index (`inst/doc/meta/vignette.rds`) for CRAN incoming checks.
+- Reinforced vignette HTML language via `lang: es` and Pandoc `lang=es` for CRAN HTML validation (VNU).
 
 # verdadecu 1.0.0
 
